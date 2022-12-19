@@ -6,6 +6,8 @@
 
 :root {
     --background: #E5E5E5;
+    --background-black:#19191B;
+
     --color-black:#000000;
     --color-gray: #666666;
     --color-white:#FFFFFF;
@@ -67,14 +69,16 @@ a {
     gap: 1rem;
 }
 
-.navbar .nav-btn {
+.navbar .nav-btn, .container-text > .container-btn button {
     width: 134px;
     height: 52px;
+    border: none;
     border-radius: 12px;
-    background-color: var(--color-black);
+    background-color: var(--background-black);
     text-align: center;
-    align-items: center;
     padding: 1rem;
+
+    cursor: pointer;
 }
 
 .navbar ul li > a {
@@ -89,4 +93,58 @@ a {
 .navbar ul li.nav-btn > a {
     font-weight: 600;
     color: var(--color-white);
+}
+
+
+.wrapper {
+    max-width: 1450px;
+    padding: 5rem 10rem 0 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+
+}
+
+.container-text {
+    width: 360px;   
+}
+
+.container-text > h1 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 68px;
+    margin-bottom: 0.5rem;
+}
+
+.container-text > p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-gray);
+}
+
+.container-text .container-btn {
+    margin-top: 1.2rem;
+}
+
+.container-text .container-btn > button {
+    color: var(--color-white);
+}
+
+
+.footer > div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1rem 10rem;
+}
+
+.footer > div p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-black);
+    text-transform: uppercase;
 }
