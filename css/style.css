@@ -35,7 +35,7 @@ a {
     grid-template-columns: 1fr 300px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2.4rem 10rem;
+    padding: 1.5rem 10rem 0 10rem;
 }
 
 .container-logo {
@@ -78,7 +78,7 @@ a {
     justify-content: center;
 }
 
-.navbar .nav-btn, .container-text > .container-btn button {
+.navbar .nav-btn, .container-text > .container-btn a {
     width: 134px;
     height: 52px;
     border: none;
@@ -105,17 +105,25 @@ a {
 }
 
 
-.wrapper {
+.wrapper, .wrapper-about {
     max-width: 1450px;
-    padding: 5rem 10rem 0 10rem;
+    height: 550px;
+    padding: 4rem 10rem 0 10rem;
     display: grid;
     grid-template-columns: 530px 1fr;
     gap: 2rem;
-
 }
 
+.wrapper-about {
+    grid-template-columns: 1fr 550px;
+    
+}
+
+
 .container-text {
-    width: 360px;   
+    width: 470px;   
+    height: 400px;
+    padding: 1.5rem 0;
 }
 
 .container-text > h1 {
@@ -126,6 +134,7 @@ a {
 }
 
 .container-text > p {
+    text-align:start;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
@@ -133,10 +142,10 @@ a {
 }
 
 .container-text .container-btn {
-    margin-top: 1.2rem;
+    margin-top: 2rem;
 }
 
-.container-text .container-btn > button {
+.container-text .container-btn > a {
     color: var(--color-white);
 }
 
