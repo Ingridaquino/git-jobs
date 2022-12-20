@@ -35,7 +35,7 @@ a {
     grid-template-columns: 1fr 300px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.5rem 10rem;
+    padding: 2.4rem 10rem;
 }
 
 .container-logo {
@@ -108,10 +108,8 @@ a {
 .wrapper {
     max-width: 1450px;
     padding: 5rem 10rem 0 10rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 530px 1fr;
     gap: 2rem;
 
 }
